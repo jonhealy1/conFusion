@@ -39,3 +39,14 @@ address {
 	margin:0px;
 	color:#0f0f0f;
 }
+
+.card{
+	margin: 80px 0px 80px 0px;
+}
+.form-group{
+	margin: 20px 0px 20px 0px;
+}
+
+.radio-inline{
+	margin: 0px 0px 0px 0px;
+}
