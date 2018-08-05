@@ -50,3 +50,13 @@ address {
 .radio-inline{
 	margin: 0px 0px 0px 0px;
 }
+
+#reserve{
+	background-color:#fa7000;
+	border:none;
+}
+
+#resv{
+	background-color:#fa7000;
+	border:none;
+}
