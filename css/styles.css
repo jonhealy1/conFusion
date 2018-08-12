@@ -82,3 +82,11 @@ address {
 	left: 0;
 	min-height: 300px;
 }
+
+.nonsmoke {
+	background-color:#00fa21;
+}
+
+.smoke {
+	background-color:#00fa21;
+}
