@@ -90,3 +90,9 @@ address {
 .smoke {
 	background-color:#00fa21;
 }
+
+#carouselButton {
+	right: 0px;
+	position: absolute;
+	bottom: 0px;
+}
