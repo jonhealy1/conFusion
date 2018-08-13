@@ -2,7 +2,7 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
-$background-white: #fffaf0;
+$background-floralWhite: #fffaf0;
 $carousel-item-height: 300px;
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
@@ -82,9 +82,9 @@ body{
 }
 
 #resHead {
-    color: $background-white;
+    color: $background-floralWhite;
 }
 
 #logHead {
-    color: $background-white;
+    color: $background-floralWhite;
 }
