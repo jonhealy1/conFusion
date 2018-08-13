@@ -34,7 +34,7 @@
                         <span class="fa fa-address-card fa-lg"></span>  Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginBut">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -48,7 +48,7 @@
             <!-- Modal content -->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Login</h4>
+                        <h4 class="modal-title" id="logHead">Login</h4>
                         <button type="button" class="close" data-dismiss="modal">
                             &times;
                         </button>
@@ -94,7 +94,7 @@
                 <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Reserve</h4>
+                            <h4 class="modal-title" id="resHead">Reserve</h4>
                             <button type="button" class="close" data-dismiss="modal">
                                 &times;
                             </button>
@@ -198,9 +198,9 @@
                 <div class="offset-md-0 col-md-3 align-self-center">
                         <!--<a href="#resv" class="btn-sm btn-primary" id="reserve" role="button">Reserve Table</a>-->
                         <a role="button" class="btn btn-block nav-link btn-warning"
-                            data-target="#reserveModal" data-toggle="modal" data-html="true" title="Or Call 
+                            id="reserveBut" title="Or Call 
                             us at <br><strong>+852 12345678</strong>"
-                            data-placement="bottom">Reserve Table</a>
+                            >Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -458,6 +458,20 @@
                 
             });
         });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#reserveBut").click(function(){
+                $("#reserveModal").modal();
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function(){
+                $("#loginBut").click(function(){
+                    $("#loginModal").modal();
+                });
+            });
     </script>
 </body>
 
