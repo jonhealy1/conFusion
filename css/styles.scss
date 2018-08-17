@@ -73,18 +73,33 @@ body{
     bottom: 0px;
 }
 
-.modal-header {
-    background-color: $background-dark;
-}
+.modal {
+    .modal-header {
+        background-color: $background-dark;
+    }
 
-.modal-content {
-    background-color: $background-pale;
-}
+    .modal-content {
+        background-color: $background-pale;
+    }
 
-#resHead {
-    color: $background-floralWhite;
-}
+    #resHead {
+        color: $background-floralWhite;
+    }
 
-#logHead {
-    color: $background-floralWhite;
+    #logHead {
+        color: $background-floralWhite;
+    }
+
+    #closeLog {
+        color: $background-floralWhite; 
+    }
+
+    #closeRes {
+        color: $background-floralWhite;
+    }
+
+    //.close {
+    //    color: $background-floralWhite;
+    //    opacity: 1;
+    //}
 }

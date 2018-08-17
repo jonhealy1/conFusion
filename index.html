@@ -49,7 +49,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="logHead">Login</h4>
-                        <button type="button" class="close" data-dismiss="modal">
+                        <button type="button" class="close" data-dismiss="modal" id="closeLog">
                             &times;
                         </button>
                     </div>
@@ -95,7 +95,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title" id="resHead">Reserve</h4>
-                            <button type="button" class="close" data-dismiss="modal">
+                            <button type="button" class="close" data-dismiss="modal" id="closeRes">
                                 &times;
                             </button>
                         </div>
@@ -370,41 +370,10 @@
            </div>
         </div>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#mycarousel').carousel({ interval: 2000 });
-            $('#carouselButton').click(function() {
-                if ($('#carouselButton').children('span').hasClass('fa-pause')) {
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-                } else if ($('#carouselButton').children('span').hasClass('fa-play')) {
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-                
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $("#reserveBut").click(function(){
-                $("#reserveModal").modal();
-            });
-        });
-    </script>
-    <script>
-            $(document).ready(function(){
-                $("#loginBut").click(function(){
-                    $("#loginModal").modal();
-                });
-            });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
